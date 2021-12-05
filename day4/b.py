@@ -1,9 +1,7 @@
-from copy import deepcopy
 class Board:
     def __init__(self, values):
         self.playing = True
-        self.static_values = deepcopy(values)
-        self.values = deepcopy(values)
+        self.values = values
     
     def updateBoard(self, val):
         for y in range(0, 5):
